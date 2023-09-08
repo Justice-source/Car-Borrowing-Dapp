@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ea005be8.css",
+    "main.js": "/static/js/main.a88f9a1f.js",
+    "static/media/subaru WRX.png": "/static/media/subaru WRX.c02bc8fbcfd26b2fd95b.png",
+    "static/media/sportage-box.png": "/static/media/sportage-box.bc265107707b2b3b2c7b.png",
+    "static/media/bmw-box.png": "/static/media/bmw-box.6fc9c45a4beb34ffeffa.png",
+    "static/media/main.png": "/static/media/main.78e292417f55aa25afac.png",
+    "static/media/Chevrolet-Camaro.png": "/static/media/Chevrolet-Camaro.ee8e88433a80f2e59e2c.png",
+    "static/media/logo.png": "/static/media/logo.a435ac20d08043dae81b.png",
+    "static/media/mazda-MX-5-miata.png": "/static/media/mazda-MX-5-miata.4b0e827c2e224670120f.png",
+    "static/media/honda-cr-v.png": "/static/media/honda-cr-v.e4fe4a4ba0b5944a89b5.png",
+    "index.html": "/index.html",
+    "main.ea005be8.css.map": "/static/css/main.ea005be8.css.map",
+    "main.a88f9a1f.js.map": "/static/js/main.a88f9a1f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea005be8.css",
+    "static/js/main.a88f9a1f.js"
+  ]
+}
