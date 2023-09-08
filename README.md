@@ -27,14 +27,15 @@ To set up the development environment and run the Minted AI DApp locally, follow
 1. Clone the GitHub repository:
 
    ```shell
-  https://github.com/Justice-source/Car-Rental-Dapp.git
-2. Install the dependencies:
+    https://github.com/Justice-source/Car-Rental-Dapp.git
+  
+3. Install the dependencies:
 
 
     ```shell
     npm install
 
-3. Set up environment variables:
+4. Set up environment variables:
 
     Create a .env file in the project root directory.
 
@@ -46,12 +47,12 @@ To set up the development environment and run the Minted AI DApp locally, follow
 
 
     //Make sure to replace them with the actual values.
-4. Deploy the Smart Contract:
+5. Deploy the Smart Contract:
 
     ```shell
     npx hardhat run scripts/deploy.js --network sepolia
 
-5. Start the development server:
+6. Start the development server:
 
     ```shell
     npm run start
