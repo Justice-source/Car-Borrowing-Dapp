@@ -27,9 +27,9 @@ To set up the development environment and run the Minted AI DApp locally, follow
 1. Clone the GitHub repository:
 
    ```shell
-   git clone https://github.com/kikomicevski/Minted-AI-DApp.git
-
+  https://github.com/Justice-source/Car-Rental-Dapp.git
 2. Install the dependencies:
+
 
     ```shell
     npm install
