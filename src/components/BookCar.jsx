@@ -80,7 +80,7 @@ function BookCar() {
       dropOff === "" ||
       pickTime === "" ||
       dropTime === "" ||
-      carType === ""
+      carType === ""   
     ) {
       errorMsg.style.display = "flex";
       errorMsg.textContent = "Missing field";
@@ -106,76 +106,77 @@ function BookCar() {
     }
   }, [modal]);
 
-  // confirm modal booking
-  const confirmBooking = async (e) => {
-    e.preventDefault();
-    const errorMsg = document.querySelector(".error-message");
-  
-    if (
-      name === "" ||
-      lastName === "" ||
-      phone === "" ||
-      age === "" ||
-      email === "" ||
-      address === "" ||
-      city === "" ||
-      zipcode === ""
-    ) {
-      errorMsg.style.display = "flex";
-      errorMsg.textContent = "Missing field";
-    } else {
-      const pickUpDate = new Date(pickTime).getTime() / 1000;
-      const dropOffDate = new Date(dropTime).getTime() / 1000;
-  
-      try {
-        // Calculate the duration of the rental in seconds
-        const pickUpDateInSeconds = new Date(pickTime).getTime() / 1000;
-        const dropOffDateInSeconds = new Date(dropTime).getTime() / 1000;
-        const durationInSeconds = dropOffDateInSeconds - pickUpDateInSeconds;
-  
-        // Find the selected car in the CAR_DATA array
-        const selectedCar = CAR_DATA.find((car) => car[0].name === carType);
-  
-        if (!selectedCar) {
-          errorMsg.style.display = "flex";
-          errorMsg.textContent = "Invalid car type";
-        } else {
-          // Extract the price of the selected car
-          const carPrice = parseFloat(selectedCar[0].price);
-  
-          // Calculate the total cost based on the car price and duration
-          const totalCost = (carPrice * durationInSeconds) / (24 * 3600); // Convert to days
-  
-          // You can display the total cost to the user or proceed with payment here
-          console.log(`Total cost: ETH ${totalCost.toFixed(2)}`);
-  
-          // Prompt the user to pay using MetaMask
-          const paymentAmount = ethers.utils.parseUnits(totalCost.toFixed(2), 'ether'); // Convert to wei
-          const gasLimit = 300000;
-  
-          // Send the payment transaction to the carRentalContract
-          const transaction = await signer.sendTransaction({
-            to: carRentalContract.address, // Replace with the address of your carRentalContract
-            value: paymentAmount,
-            gasLimit: gasLimit,
-          });
-          
-          // Check if the transaction was successful
-          await transaction.wait();
-  
-          errorMsg.style.display = "none";
-          setModal(!modal);
-          const doneMsg = document.querySelector(".booking-done");
-          doneMsg.style.display = "flex";
-        }
-      } catch (error) {
-        // Handle errors (e.g., user rejected the transaction)
-        console.error("Payment error:", error);
+// Confirm modal booking
+const confirmBooking = async (e) => {
+  e.preventDefault();
+  const errorMsg = document.querySelector(".error-message");
+
+  if (
+    name === "" ||
+    lastName === "" ||
+    phone === "" ||
+    age === "" ||
+    email === "" ||
+    address === "" ||
+    city === "" ||
+    zipcode === ""
+  ) {
+    errorMsg.style.display = "flex";
+    errorMsg.textContent = "Missing field";
+  } else {
+    const pickUpDate = new Date(pickTime).getTime() / 1000;
+    const dropOffDate = new Date(dropTime).getTime() / 1000;
+
+    try {
+      // Calculate the duration of the rental in seconds
+      const pickUpDateInSeconds = new Date(pickTime).getTime() / 1000;
+      const dropOffDateInSeconds = new Date(dropTime).getTime() / 1000;
+      const durationInSeconds = dropOffDateInSeconds - pickUpDateInSeconds;
+
+      // Find the selected car in the CAR_DATA array
+      const selectedCar = CAR_DATA.find((carArray) => carArray[0].name === carType);
+
+      if (!selectedCar) {
         errorMsg.style.display = "flex";
-        errorMsg.textContent = "Payment failed";
+        errorMsg.textContent = "Invalid car type";
+      } else {
+        // Extract the price of the selected car
+        const carPrice = parseFloat(selectedCar[0].price);
+
+        // Calculate the total cost based on the car price and duration
+        const totalCost = (carPrice * durationInSeconds) / (24 * 3600); // Convert to days
+
+        // You can display the total cost to the user or proceed with payment here
+        console.log(`Total cost: ETH ${totalCost.toFixed(2)}`);
+
+        // Prompt the user to pay using MetaMask
+        const paymentAmount = ethers.utils.parseUnits(totalCost.toFixed(2), 'ether'); // Convert to wei
+        const gasLimit = 300000;
+
+        // Send the payment transaction to the carRentalContract
+        const transaction = await signer.sendTransaction({
+          to: carRentalContract.address, // Replace with the address of your carRentalContract
+          value: paymentAmount,
+          gasLimit: gasLimit,
+        });
+
+        // Check if the transaction was successful
+        await transaction.wait();
+
+        errorMsg.style.display = "none";
+        setModal(!modal);
+        const doneMsg = document.querySelector(".booking-done");
+        doneMsg.style.display = "flex";
       }
+    } catch (error) {
+      // Handle errors (e.g., user rejected the transaction)
+      console.error("Payment error:", error);
+      errorMsg.style.display = "flex";
+      errorMsg.textContent = "Payment failed";
     }
-  };
+  }
+};
+
   
 
   // taking value of booking inputs
@@ -203,10 +204,10 @@ function BookCar() {
   // based on value name show car img
   let imgUrl;
   switch (carImg) {
-    case "Honda CR-V":
+    case "Honda":
       imgUrl = CarHonda;
       break;
-    case "Mazda-MX-5-Miata":
+    case "Mazda Miata":
       imgUrl = CarMazda;
       break;
     case "Suburu WRX":
@@ -262,8 +263,8 @@ function BookCar() {
                   </label>
                   <select value={carType} onChange={handleCar}>
                     <option>Select your car type</option>
-                    <option value="Honda CR-V">Honda CR-V</option>
-                    <option value="Mazda-MX-5-Miata">Mazda-MX-5-Miata</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Mazda Miata">Mazda Miata</option>
                     <option value="Subaru WRX">Subaru WRX</option>
                     <option value="BMW 530">
                       BMW 530
