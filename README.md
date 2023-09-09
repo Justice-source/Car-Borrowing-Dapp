@@ -41,6 +41,9 @@ Before you begin, ensure you have met the following requirements:
 - Ethereum wallet with testnet Ether for testing (e.g., Ropsten or Rinkeby).
 - You could also make use of the hedera testnet.
 
+- My socials
+- [Twitter/X](https://twitter.com/Bolypius)
+
 To set up the development environment and run the Minted AI DApp locally, follow these steps:
 
 1. Clone the GitHub repository:
