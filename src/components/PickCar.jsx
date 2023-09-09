@@ -37,7 +37,7 @@ function PickCar() {
                     btnID("btn1");
                   }}
                 >
-                 Mazda-MX-5-Miata
+                 Mazda Miata
                 </button>
                 <button
                   className={`${coloringButton("btn2")}`}
@@ -47,7 +47,7 @@ function PickCar() {
                     btnID("btn2");
                   }}
                 >
-                  Honda CR-V
+                  Honda CRV
                 </button>
                 <button
                   className={`${coloringButton("btn3")}`}
