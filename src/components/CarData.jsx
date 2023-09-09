@@ -8,10 +8,10 @@ import Chevrolet from "../images/cars-big/Chevrolet-Camaro.png";
 export const CAR_DATA = [
   [
     {
-      name: "HondaCRV ",
-      price: "0.067",
+      name: "Honda",
+      price: "0.037",
       img: HondaCRV ,
-      model: "CR-V",
+      model: "CRV",
       type: "Compact SUV",
       year: "2020",
       doors: "4/5",
@@ -22,8 +22,8 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "Mazda",
-      price: "0.071",
+      name: "Mazda Miata",
+      price: "0.025",
       img: Mazda,
       model: "Miata",
       type: "Sports Car",
