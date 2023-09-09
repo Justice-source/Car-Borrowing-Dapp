@@ -13,26 +13,40 @@ This write-up will explain why you picked these features and explain how the fea
 I worked had in providing a unique Car borrowing dApp;
 I included additional functionality to the dApp such as:
 
-- A car data array of six (6) cars.
-- A better UI included with better more intuitive designs.
-- I included a function to calculate the duration of the rental/borrow periodin seconds.
-- A function to calculate the total cost based on the car price and duration.
-- A function to implement personal info and to log previous users.
-- I included a description of the six cars as well as provided the price in ether.
-- I included pictures of the six cars to improve better options on the dApp.
-- I included a pickoff and dropoff duration on the dApp.
-- I provided a testimonial feature to display all our satisfied customers.
-- I included a rich description of all cars present on the website.
+
+# My Thought process behind tackling this bounty
+I had successfully finished all 9 quest that was provided for us and stumbled on this bounty
+I wanted to create a dApp that was not only easy to use but unique,
+It took me a while to set up Reactjs and brush myself on it as I was rusty.
+I made use of resources such as google, stackoverflow and stack up discord channel.
+The website is deployed to firebase app. I designed this dApp around Nigeria as most of the locations you will see are 
+places located in Akwa Ibom State, Nigeria.
+I am happy with the result as it took countless hours and research to finish the bounty.
+I am grateful to have the opportunity to be a part of this and I hope to be considered for the rewards.
 
 
-When reserving/borrowing cars, use the advaced settings of 2072 as your max base fee, 2.5 as your priority fee, and set your gas limit to 800000
+- A car data array of six (6) cars: My reason for using six cars is just a personal preference _ wanted to add as much cars as possible to the list of options for the customer.
+- A better UI included with better more intuitive designs: I made use of the blue color in the CSS of the the quest 9 frontend work files as they easy on the eyes.
+- I included a function to calculate the duration of the rental/borrow periodin seconds:This idea came to me after rereading the instructions on the bounty.
+- A function to calculate the total cost based on the car price and duration: Since I want customers to be more understand the criteria for borrowing a car, I wanted to include transperency in the dApp , It provides users with an estimate of the total cost they can expect to pay for renting a car, which is crucial for budgeting and decision-making.
+- A function to implement personal info and to log previous users:It allows the merchant to authenticate users/ customers, ensuring that only authorized individuals can access specific features or data within my decentralized application(dApp). This is crucial for security and protecting user privacy.
+- I included a description of the six cars as well as provided the price in ether:Transparency in cryptocurrency transactions is important,For users/customers familiar with cryptocurrency, having prices in ether allows them to see the exact amount they need to pay without having to convert between cryptocurrencies and fiat currencies.
+- I included pictures of the six cars to improve better options on the dApp:Providing detailed descriptions of each cars on the website, including their make, model, type, year, features (such as air conditioning and transmission), and even images, offers potential borrowers a clear and comprehensive understanding of the available options. This transparency is essential for making informed decisions.
+  Descriptions and images enhance the user experience by allowing customers to visualize the cars they're interested in renting/borrowing. It helps them compare and choose the vehicle that best suits their needs and preferences.
+- I included a pickoff and dropoff duration on the dApp:Planning Convenience, It simplifies trip planning by allowing customers to coordinate their pick-up and drop-off times with other aspects of their travel itinerary, such as flights or meetings.
+- I provided a testimonial feature to display all our satisfied customers:Testimonials can be used as a marketing tool to highlight the strengths and unique selling points of our car borrowing dApp. showcasing what sets your service apart from the competition is important.
+- I included a rich description of all cars present on the website: Detailed car descriptions help potential customers make informed decisions by providing comprehensive information about each vehicle's features, specifications, and characteristics.
+
+
+- When reserving/borrowing cars, use the advaced settings of 2072 as your max base fee, 2.5 as your priority fee, and set your gas limit to 800000
+  this is very important to note when reserving a chosen car.
 
 - User-friendly interface for booking cars.
 - Integration with the Ethereum blockchain for secure and transparent payments.
 - Selection of car type, pick-up, and drop-off locations.
 - Validation and error handling for booking and payment processes.
 - Smart contract to manage car rentals, payments, and user balances.
-
+  
 
 Before you begin, ensure you have met the following requirements:
 
@@ -43,6 +57,7 @@ Before you begin, ensure you have met the following requirements:
 
 - My socials
 - [Twitter/X](https://twitter.com/Bolypius)
+- My Discord username is riopt
 
 To set up the development environment and run the Minted AI DApp locally, follow these steps:
 
