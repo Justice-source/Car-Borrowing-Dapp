@@ -57,7 +57,7 @@ Before you begin, ensure you have met the following requirements:
 
 - My socials
 - [Twitter/X](https://twitter.com/Bolypius)
-- My Discord username is riopt
+- My Discord username is [riopt](http://discordapp.com/users/1115954175340183592)
 
 To set up the development environment and run the Minted AI DApp locally, follow these steps:
 
