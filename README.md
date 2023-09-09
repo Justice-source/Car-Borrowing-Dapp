@@ -1,6 +1,6 @@
 # Car Borrowing Dapp
 
-Car borrowing Dapp is a decentralized application (Dapp) built on Ethereum using Solidity and ReactJs. It allows users to book and borrow cars and make payments using cryptocurrency.
+Car borrowing Dapp is a decentralized application (Dapp) built on Ethereum using Solidity and ReactJs. It allows users to book and borrow cars and make payments using decentralized currency like ether and HBAR.
 
 <div style="text-align:center;">
   <img src="/src/images/Car-Rental-Dapp.png" alt="site">
