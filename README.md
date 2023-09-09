@@ -13,19 +13,16 @@ This write-up will explain why you picked these features and explain how the fea
 I worked had in providing a unique Car borrowing dApp;
 I included additional functionality to the dApp such as:
 
--A car data array of six (6) cars.
-
--A better UI included with better more intuitive designs.
-
--I included a function to calculate the duration of the rental/borrow periodin seconds.
-
--A function to calculate the total cost based on the car price and duration.
--A function to implement personal info and to log previous users.
--I included a description of the six cars as well as provided the price in ether.
--I included pictures of the six cars to improve better options on the dApp.
--I included a pickoff and dropoff duration on the dApp.
--I provided a testimonial feature to display all our satisfied customers.
--I included a rich description of all cars present on the website.
+- A car data array of six (6) cars.
+- A better UI included with better more intuitive designs.
+- I included a function to calculate the duration of the rental/borrow periodin seconds.
+- A function to calculate the total cost based on the car price and duration.
+- A function to implement personal info and to log previous users.
+- I included a description of the six cars as well as provided the price in ether.
+- I included pictures of the six cars to improve better options on the dApp.
+- I included a pickoff and dropoff duration on the dApp.
+- I provided a testimonial feature to display all our satisfied customers.
+- I included a rich description of all cars present on the website.
 
 
 When reserving/borrowing cars, use the advaced settings of 2072 as your max base fee, 2.5 as your priority fee, and set your gas limit to 800000
